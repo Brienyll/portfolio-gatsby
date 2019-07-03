@@ -41,6 +41,7 @@ p {
 }
 .defaultHero {
   min-height: calc(100vh - 62px);
+  background: url("../images/bg.png") center no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
