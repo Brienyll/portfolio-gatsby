@@ -11,7 +11,8 @@ const Projects = () => {
         {
           projects.map((item, index)=> {
             return <article key={index} className={styles.project}>
-            <span>{item.image}</span>
+            <a href={item.link}>
+            <span>{item.image}</span></a>
             <h4>{ item.title}</h4>
             <p>{item.text}</p>
             </article>
