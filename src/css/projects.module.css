@@ -23,8 +23,12 @@
   text-transform: uppercase;
 }
 
-.project img {
-  width: 500px;
-  height: 246px;
+@media screen and (max-width: 650px) {
+  .center {
+    margin: 0 auto;
+    display: block;
+  }
+  .project span img {
+    width: 76vw;
+  }
 }
-
