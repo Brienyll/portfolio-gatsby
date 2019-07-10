@@ -1,6 +1,6 @@
 import React from "react"
 import Title from "../Title"
-import styles from "../../CSS/about.module.css"
+import styles from "../../css/about.module.css"
 import img from "../../images/dev.svg"
 
 const About = () => {
