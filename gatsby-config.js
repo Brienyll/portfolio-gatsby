@@ -6,6 +6,12 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-styled-components`,
+  siteMetadata: {
+    title:"Brix-Portfolio",
+    description: "My portfolio built with gatsby",
+    author: "Brix Angeles",
+  },
+  plugins: [`gatsby-plugin-sass`,
+  `gatsby-plugin-styled-components`,
 ],
 }
