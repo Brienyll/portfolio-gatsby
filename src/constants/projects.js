@@ -3,6 +3,10 @@ import P1 from "../images/scfacer29.png"
 import P2 from "../images/scbooks29.png"
 import P3 from "../images/scfriends29.png"
 import P4 from "../images/scpoke29.png"
+import { graphql, useStaticQuery } from "gatsby"
+import styled from "styled-components"
+import img from "../images/scbooks29.png"
+import Img from "gatsby-image"
 
 export default [
   {
@@ -13,7 +17,7 @@ export default [
   },
   {
     link: "https://books29.netlify.com/",
-    image: <img src={P2} alt="Virtual Bookshelf" />,
+    image: <img src={img} alt="Virtual Bookshelf" />,
     title: "Virtual Bookshelf",
     text: "Built a responsive web application that allows users to select and categorize books into a virtual bookshelf. Leveraged React to support a dynamic user interface that interacts with an API server and client library."
   },
