@@ -1,17 +1,15 @@
 import React from "react"
-import P1 from "../images/scfacer29.png"
-import P2 from "../images/scbooks29.png"
-import P3 from "../images/scfriends29.png"
-import P4 from "../images/scpoke29.png"
 import { graphql, useStaticQuery } from "gatsby"
-import styled from "styled-components"
 import img from "../images/scbooks29.png"
 import Img from "gatsby-image"
 
+const data = useStaticQuery(getImages);
+
 export default [
+  
   {
     link: "https://facer29.netlify.com/",
-    image: <img src={P1} alt="Face Recognition App" />,
+    image: <Img fluid={data.fluid.childImageSharp} alt="Face Recognition App" />,
     title: "Face Recognition App",
     text: "Built a web Application that detects and identifies images that you upload from the web using machine learning and neural networks with the help of clarifai's API."
   },
@@ -23,13 +21,13 @@ export default [
   },
   {
     link: "https://friends29.netlify.com/",
-    image: <img src={P3} alt="My Friends" />,
+    image: <Img fixed={data.fluid.childImageSharp} alt="My Friends" />,
     title: "My Friends",
     text: "Single Page Application using React that searches your robot friends asyncronously. Leveraged React for dynamic state management."
   },
   {
     link: "https://pokebattle29.netlify.com/",
-    image: <img src={P4} alt="Poke Cards" />,
+    image: <Img fixed={data.fluid.childImageSharp} alt="Poke Cards" />,
     title: "Poke Cards",
     text: "Single Page Application using React that deals 5 random pokemon cards to you and opponent. Winner is detrmined by the total experience of Pokemons"
   }
