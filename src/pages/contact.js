@@ -3,11 +3,11 @@ import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
 
-export default function contact() {
+const contact = ({data}) => {
   return (
     <>
       <Layout>
-        contact
+      <StyledHero img={data.defaultBg.childImageSharp.fluid}/>
       </Layout>
     </>
   )
@@ -15,7 +15,7 @@ export default function contact() {
 
 export const query = graphql`
 query {
-  defaultBg: file(relativePath: {eq: "bg.png"}) {
+  defaultBg: file(relativePath: {eq: "bgPhone.jpg"}) {
     childImageSharp {
       fluid (quality: 90, maxWidth:4160){
         ...GatsbyImageSharpFluid_withWebp
@@ -24,3 +24,5 @@ query {
   }
 } 
 `
+
+export default contact

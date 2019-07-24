@@ -17,7 +17,7 @@ export default class about extends Component {
 
 export const query = graphql`
 query {
-  defaultBg: file(relativePath: {eq: "bg.png"}) {
+  defaultBg: file(relativePath: {eq: "bgAbout.jpg"}) {
     childImageSharp {
       fluid (quality: 90, maxWidth:4160){
         ...GatsbyImageSharpFluid_withWebp
