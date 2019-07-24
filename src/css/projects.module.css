@@ -20,7 +20,12 @@
   margin-bottom: 1.5rem;
 }
 .project h4 {
+  margin-top: 5%;
   text-transform: uppercase;
+}
+
+.project p {
+  padding: 0 1rem;
 }
 
 @media screen and (max-width: 650px) {

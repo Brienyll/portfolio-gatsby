@@ -5,10 +5,12 @@ import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Projects from "../components/Home/Projects"
 import StyledHero from "../components/StyledHero"
+import { graphql } from "gatsby"
 
-export default () => (
+export default ({data}) => (
+
   <Layout>
-    <StyledHero home="true">
+    <StyledHero home="true" img={data.defaultBg.childImageSharp.fluid}>
     <Banner title="Brix Angeles" info="A web developer from Los Angeles. A Student, self-taught, and Grow with Google Front End Scholar.">
         <Link to="/about" className="btn-white">
           About Me
@@ -20,3 +22,15 @@ export default () => (
     <Projects />
   </Layout>
 )
+
+export const query = graphql`
+query {
+  defaultBg: file(relativePath: {eq: "bg.png"}) {
+    childImageSharp {
+      fluid (quality: 90, maxWidth:4160){
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+  }
+} 
+`

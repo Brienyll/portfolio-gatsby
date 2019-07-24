@@ -47,8 +47,8 @@ const Projects = () => {
         <article className={styles.project}>
             <a href="https://facer29.netlify.com/">
             <Img fluid={data.face.childImageSharp.fluid} alt="Face Recognition App" /></a>
-            <h4>"Face Recognition App"</h4>
-            <p>"Built a web Application that detects and identifies images that you upload from the web using machine learning and neural networks with the help of clarifai's API."</p>
+            <h4>Face Recognition App</h4>
+            <p>Built a web Application that detects and identifies images that you upload from the web using machine learning and neural networks with the help of clarifai's API.</p>
         </article>
         <article className={styles.project}>
             <a href="https://books29.netlify.com/">
@@ -65,8 +65,8 @@ const Projects = () => {
         <article className={styles.project}>
             <a href="https://poke29.netlify.com/">
             <Img fluid={data.poke.childImageSharp.fluid} alt="Face Recognition App" /></a>
-            <h4>"Face Recognition App"</h4>
-            <p>"Built a web Application that detects and identifies images that you upload from the web using machine learning and neural networks with the help of clarifai's API."</p>
+            <h4>Poke Card Battle</h4>
+            <p>React Web Application that gives random pokemon cards to you and an opponent. Experience is added up and whoever has the higher experience wins.</p>
         </article>
       </div>
       
