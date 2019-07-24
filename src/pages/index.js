@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
@@ -10,14 +10,13 @@ import { graphql } from "gatsby"
 export default ({data}) => (
 
   <Layout>
-    <StyledHero home="true" img={data.defaultBg.childImageSharp.fluid}>
-    <Banner title="Brix Angeles" info="A web developer from Los Angeles. A Student, self-taught, and Grow with Google Front End Scholar.">
-        <Link to="/about" className="btn-white">
-          About Me
-        </Link>
-    </Banner>
-    </StyledHero>
-    
+      <StyledHero home="true" img={data.defaultBg.childImageSharp.fluid}>
+        <Banner title="Brix Angeles" info="A web developer from Los Angeles. A Student, self-taught, and Grow with Google Front End Scholar.">
+            <AniLink fade to="/about" className="btn-white">
+              About Me
+            </AniLink>
+        </Banner>
+      </StyledHero>
     <About />
     <Projects />
   </Layout>
