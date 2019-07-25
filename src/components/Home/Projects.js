@@ -39,7 +39,6 @@ query Images {
 `
 const Projects = () => {
   const data = useStaticQuery(getImages);
-  console.log(data);
   return (
     <Wrapper className={styles.projects}>
       <Title title="Projects" />

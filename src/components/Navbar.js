@@ -11,13 +11,12 @@ const Navbar = () => {
   const toggleNav = () => {
     setNav(isOpen => !isOpen)
   }
-  console.log(isOpen)
   return (
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
         <img src={logo} alt="logo" />
-          <button type="button" className={styles.logoBtn} onClick={toggleNav}>
+          <button aria-label="button" type="button" className={styles.logoBtn} onClick={toggleNav}>
             <FaAlignRight className={styles.logoIcon} />
           </button>
         </div>
