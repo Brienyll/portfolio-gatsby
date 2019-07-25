@@ -66,7 +66,7 @@ const Projects = () => {
             <a href="https://poke29.netlify.com/">
             <Img fluid={data.poke.childImageSharp.fluid} alt="Face Recognition App" /></a>
             <h4>Poke Card Battle</h4>
-            <p>React Web Application that gives random pokemon cards to you and an opponent. Experience is added up and whoever has the higher experience wins.</p>
+            <p>Single Page Application using React that deals 5 random pokemon cards to you and opponent. Winner is determined by the total experience of Pokemons</p>
         </article>
       </div>
       
