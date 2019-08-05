@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
+import About from "../components/Skills/About"
 
 export default class about extends Component {
   render() {
     return (
       <>
       <Layout>
-        <StyledHero img={this.props.data.defaultBg.childImageSharp.fluid}/>
+        <About />
       </Layout>
       </>
     )

@@ -20,7 +20,7 @@ const About = () => {
   const {aboutImage} = useStaticQuery(getAboutImage);
   return (
     <section className={styles.about}>
-      <Title title="Skills"/>
+      <Title title="Technologies"/>
       <div className={styles.aboutCenter}>
         <article className={styles.aboutImg}>
           <div className={styles.imgContainer}>

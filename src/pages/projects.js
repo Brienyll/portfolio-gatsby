@@ -2,13 +2,15 @@ import React from 'react'
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import { graphql } from "gatsby"
+import Projects from "../components/Projects/Projects"
 
 const projects = ({data}) => {
   return (
     <>
       <Layout>
-        <StyledHero img={data.defaultBg.childImageSharp.fluid}/>
+        <Projects />
       </Layout>
+      
     </>
   )
 }
