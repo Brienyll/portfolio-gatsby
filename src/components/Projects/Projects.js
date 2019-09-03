@@ -7,28 +7,28 @@ import styled from "styled-components"
 
 const getImages = graphql`
 query Images {
-    face: file(relativePath:{eq:"scfacer29.png"}){
+    face: file(relativePath:{eq:"face-mu.jpg"}){
       childImageSharp{
         fluid {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    books: file(relativePath:{eq:"scbooks29.png"}){
+    books: file(relativePath:{eq:"books-mu.jpg"}){
       childImageSharp{
         fluid {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    friends: file(relativePath:{eq:"scfriends29.png"}){
+    friends: file(relativePath:{eq:"friends-mu.jp"}){
       childImageSharp{
         fluid {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    poke: file(relativePath:{eq:"scpoke29.png"}){
+    light: file(relativePath:{eq:"light-mu.png"}){
       childImageSharp{
         fluid {
           ...GatsbyImageSharpFluid
@@ -62,10 +62,10 @@ const Projects = () => {
             <p>Single Page Application using React that searches your robot friends asyncronously. Leveraged React for dynamic state management.</p>
         </article>
         <article className={styles.project}>
-            <a href="https://poke29.netlify.com/">
+            <a href="https:/light29.netlify.com/">
             <Img fluid={data.poke.childImageSharp.fluid} alt="Face Recognition App" /></a>
-            <h4>Poke Card Battle</h4>
-            <p>Single Page Application using React that deals 5 random pokemon cards to you and opponent. Winner is determined by the total experience of Pokemons</p>
+            <h4>Lights Off Game</h4>
+            <p>A Lights out game clone.  Pressing any of the lights will toggle it and the adjacent lights. </p>
         </article>
       </div>
       
