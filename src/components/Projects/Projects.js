@@ -65,7 +65,7 @@ const Projects = () => {
             <a href="https://light29.netlify.com/">
             <Img fluid={data.light.childImageSharp.fluid} alt="Face Recognition App" /></a>
             <h4>Lights Off Game</h4>
-            <p>A Lights out game clone.  Pressing any of the lights will toggle it and the adjacent lights. </p>
+            <p>A Lights out game clone. Turn off all the lights to win the game. Pressing any of the lights will toggle it and the adjacent lights. </p>
         </article>
       </div>
       
