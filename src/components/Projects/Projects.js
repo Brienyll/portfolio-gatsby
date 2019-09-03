@@ -7,21 +7,21 @@ import styled from "styled-components"
 
 const getImages = graphql`
 query Images {
-    face: file(relativePath:{eq:"face-mu.jpg"}){
+    face: file(relativePath:{eq:"face-mu.png"}){
       childImageSharp{
         fluid {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    books: file(relativePath:{eq:"books-mu.jpg"}){
+    books: file(relativePath:{eq:"books-mu.png"}){
       childImageSharp{
         fluid {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    friends: file(relativePath:{eq:"friends-mu.jp"}){
+    friends: file(relativePath:{eq:"friends-mu.png"}){
       childImageSharp{
         fluid {
           ...GatsbyImageSharpFluid
@@ -63,7 +63,7 @@ const Projects = () => {
         </article>
         <article className={styles.project}>
             <a href="https:/light29.netlify.com/">
-            <Img fluid={data.poke.childImageSharp.fluid} alt="Face Recognition App" /></a>
+            <Img fluid={data.light.childImageSharp.fluid} alt="Face Recognition App" /></a>
             <h4>Lights Off Game</h4>
             <p>A Lights out game clone.  Pressing any of the lights will toggle it and the adjacent lights. </p>
         </article>
